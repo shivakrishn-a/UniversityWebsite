@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/e2ec497dd4.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&family=Pixelify+Sans:wght@500&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400&family=Source+Sans+3:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href=""><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- ---contactpage--- -->
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.091774789044!2d78.45104157491984!3d17.40738280222935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb974085ad585b%3A0x2a5c9ffd7ebd953d!2sUniversity%20College%20of%20Science!5e0!3m2!1sen!2sin!4v1698380718307!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- ----form--- -->
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span>
+                        <h5>Subhash Nagar, Masabtank</h5>
+                        <p>Hyderabad, Telangana</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>+91 9010696914</h5>
+                        <p>Monday to Sataurday 9:00 AM- 6:00 PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>ucssaifabad@gmail</h5>
+                        <p>Email Us your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+       
+                <form action="">
+                    <input type="text" placeholder="Enter your Name" required>
+                    <input type="Email" placeholder="Enter your Email" required>
+                    <input type="text" placeholder="Enter yourSubject" required>
+                     <textarea  rows="8" placeholder="message" required></textarea>
+                     <button type="submit" class="button">Send Message</button>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ---footer--- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eligendi totam molestiae obcaecati placeat,
+            tenetur perspiciatis doloremque fugit, aliquid iste, ipsa <br>dignissimos excepturi omnis deserunt?</p>
+        <div class="icons">
+            <i class="fab fa-facebook" id="facebbok"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> by Shiva Krishna</p>
+    </section>
+
+
+    <!-- ---javascript for toggle menu-- -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/e2ec497dd4.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&family=Pixelify+Sans:wght@500&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400&family=Source+Sans+3:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href=""><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+
+    </section>
+
+    <!-- ---courses--- -->
+
+    <section class="course">
+        <h1>courses we offer</h1>
+        <p>These are the courses that we offer to you</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>This is a course for intermediate level. Qualification required
+                    is 10th or equaliant from recognized board
+                </p>
+            </div>
+
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>This is a course for Degree level. Qualification required
+                    is 12th or equaliant from recognized board
+                </p>
+            </div>
+
+            <div class="course-col">
+                <h3>PG</h3>
+                <p>This is a course for Post Graduuation level. Qualification required
+                    is Degree or equaliant from recognized board
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ----facilities--- -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, minus maxime consectetur quae molestias
+            repellat?</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png" alt="">
+                <h3>World class Library</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem iste cupiditate laboriosam!</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png" alt="">
+                <h3>PlayGround</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem iste cupiditate laboriosam!</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png" alt="">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorem iste cupiditate laboriosam!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---footer--- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eligendi totam molestiae obcaecati placeat,
+            tenetur perspiciatis doloremque fugit, aliquid iste, ipsa <br>dignissimos excepturi omnis deserunt?</p>
+        <div class="icons">
+            <i class="fab fa-facebook" id="facebbok"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> by Shiva Krishna</p>
+    </section>
+
+
+    <!-- ---javascript for toggle menu-- -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
